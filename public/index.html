@@ -4,59 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OrbitalScan - Web3 Discovery</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="public/style.css">
 </head>
 <body>
 
-  <section class="hero">
-    <img src="/images/logo.png" alt="OrbitalScan Logo" class="logo">
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="public/images/bg-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Main Content -->
+  <div class="content">
+    <img src="public/images/logo.png" alt="OrbitalScan Logo" class="logo">
     <h1>OrbitalScan</h1>
     <p>Scan the Future of Web3 with OrbitalScan</p>
-    <a href="https://t.me/OrbitalScan" target="_blank" class="btn-primary">🚀 Launch Mini App</a>
-  </section>
+    <a href="https://t.me/orbitalscan_bot" target="_blank" class="btn-primary">🚀 Launch Mini App</a>
 
-  <section class="about">
-    <h2>About OrbitalScan</h2>
-    <p>OrbitalScan is your gateway to early-stage NFT pre-mints, low-risk memecoins, and the best airdrop opportunities across multiple blockchains. We make Web3 discovery simple, secure, and exciting.</p>
-    <p>Visit us: <a href="https://www.orbitalscan.app" target="_blank">www.orbitalscan.app</a></p>
-  </section>
+    <!-- About -->
+    <section class="section">
+      <h2>About OrbitalScan</h2>
+      <p>OrbitalScan is your gateway to early-stage NFT pre-mints, low-risk memecoins, and the best airdrop opportunities across multiple blockchains. We make Web3 discovery simple, secure, and exciting.</p>
+      <p>Visit us: <a href="https://www.orbitalscan.app" target="_blank">www.orbitalscan.app</a></p>
+    </section>
 
-  <section class="features">
-    <h2>Key Features</h2>
-    <ul>
-      <li>🌌 <strong>EarlyCall</strong> - Find the next big memecoin early</li>
-      <li>🖼️ <strong>NFT Discovery</strong> - Explore promising NFT collections</li>
-      <li>🎯 <strong>Airdrop Hunter</strong> - Daily airdrop opportunities</li>
-    </ul>
-  </section>
+    <!-- Features -->
+    <section class="section">
+      <h2>Key Features</h2>
+      <ul>
+        <li>🌌 EarlyCall - Find the next big memecoin early</li>
+        <li>🖼️ NFT Discovery - Explore promising NFT collections</li>
+        <li>🎯 Airdrop Hunter - Daily airdrop opportunities</li>
+      </ul>
+    </section>
 
-  <section class="roadmap">
-    <h2>Roadmap</h2>
-    <ul>
-      <li>✅ Dexscreener Live Tracking</li>
-      <li>✅ Real-time Signals from Telegram</li>
-      <li>✅ Support for BSC, SOL, ETH Chains</li>
-      <li>🚀 Launch Revenue Sharing System (USD Income for Users)</li>
-      <li>🪐 User Ranking & Rewards System</li>
-      <li>✨ Official Launch of OrbitalScan V1</li>
-      <li>💎 More surprises coming soon...</li>
-    </ul>
-  </section>
+    <!-- Roadmap -->
+    <section class="section">
+      <h2>Roadmap</h2>
+      <ul>
+        <li>✅ Dexscreener Live Tracking</li>
+        <li>✅ Real-time Signals from Telegram</li>
+        <li>✅ Support for BSC, SOL, ETH Chains</li>
+        <li>🚀 Launch Revenue Sharing System (USD Income for Users)</li>
+        <li>🪐 User Ranking & Rewards System</li>
+        <li>✨ Official Launch of OrbitalScan V1</li>
+        <li>💎 More surprises coming soon...</li>
+      </ul>
+    </section>
 
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:sinasalmasiemirate@gmail.com">sinasalmasiemirate@gmail.com</a></p>
-      <p><strong>Telegram ID:</strong> <a href="https://t.me/SinaDali" target="_blank">@SinaDali</a></p>
-      <p><strong>Meeting Australia - Dubai:</strong> +61 470 561 501</p>
-      <p><strong>Twitter (X):</strong> <a href="https://x.com/OrbitalScanapp" target="_blank">OrbitalScan Twitter</a></p>
-      <p><strong>Telegram Channel:</strong> <a href="https://t.me/OrbitalScan" target="_blank">OrbitalScan Channel</a></p>
-    </div>
-  </section>
+    <!-- Contact -->
+    <section class="section">
+      <h2>Contact Us</h2>
+      <div class="social-icons">
+        <a href="https://x.com/OrbitalScanapp" target="_blank">
+          <img src="public/images/twitter.png" alt="Twitter">
+        </a>
+        <a href="https://t.me/OrbitalScan" target="_blank">
+          <img src="public/images/telegram.png" alt="Telegram">
+        </a>
+        <a href="mailto:sinasalmasiemirate@gmail.com" target="_blank">
+          <img src="public/images/email.png" alt="Email">
+        </a>
+      </div>
 
-  <footer>
-    <p>© 2025 OrbitalScan. Built by Sina Salmasi.</p>
-  </footer>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+
+  </div>
 
 </body>
 </html>
