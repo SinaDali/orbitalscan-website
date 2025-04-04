@@ -9,27 +9,25 @@ body {
   text-align: center;
 }
 
-header {
-  padding: 40px 20px 20px;
+.hero {
+  padding: 100px 20px 60px;
 }
 
 .logo {
-  width: 120px;
-  height: auto;
+  width: 150px;
   margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
   text-shadow: 0 0 10px #0fffc1, 0 0 20px #f39cff;
 }
 
-p {
-  font-size: 1rem;
-  color: #d0d0d0;
-  margin: 0 auto 20px;
-  max-width: 800px;
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
 }
 
 .btn-primary {
@@ -41,10 +39,8 @@ p {
   font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
-  margin-top: 20px;
-  display: inline-block;
-  box-shadow: 0 0 10px #f39cff;
   transition: 0.3s;
+  box-shadow: 0 0 10px #f39cff;
 }
 
 .btn-primary:hover {
@@ -64,6 +60,12 @@ h2 {
   color: #f39cff;
 }
 
+p, ul li {
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -71,27 +73,6 @@ ul {
 
 ul li {
   margin-bottom: 1rem;
-  font-size: 1rem;
-  color: #cccccc;
-  line-height: 1.6;
-}
-
-ul li::before {
-  content: "🚀 ";
-  color: #0fffc1;
-}
-
-footer {
-  padding: 1rem 0;
-  background: rgba(0, 0, 0, 0.5);
-  font-size: 0.9rem;
-  color: #999999;
-  margin-top: 2rem;
-}
-
-.contact-info {
-  margin-top: 2rem;
-  font-size: 1rem;
 }
 
 .contact-info p {
@@ -105,4 +86,12 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+footer {
+  padding: 1rem 0;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 0.9rem;
+  color: #999999;
+  margin-top: 2rem;
 }
