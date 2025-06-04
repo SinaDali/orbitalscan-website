@@ -4,79 +4,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OrbitalVerse</title>
+  <title>OrbitalScan | OrbitalVerse</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="OrbitalVerse Logo" class="logo" onclick="goHome()">
-    <nav>
-      <a href="#whatwedo">What We Do</a>
-      <a href="#platforms">Platforms</a>
-      <a href="#team">Our Vision</a>
-      <a href="#waitlist">Waitlist</a>
-    </nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="OrbitalScan Logo" />
+      <h1>OrbitalVerse</h1>
+    </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>Unifying AI Agents and Web3 Discovery</h1>
-    <p class="subtitle">A single intelligent ecosystem for the future of personal automation and decentralized rewards.</p>
-    <img src="images/hero-main.jpg" alt="Hero Image" class="hero-image" />
-  </section>
-
-  <section id="whatwedo" class="section">
-    <h2 class="neon-title">What We Do</h2>
-    <div class="features">
-      <div class="feature-box">🧠 Build Personal AI Agents for your daily tasks & explorations</div>
-      <div class="feature-box">💻 Turn Devices into Miners for Passive Rewards</div>
-      <div class="feature-box">📊 Personalized Crypto Portfolios based on your emotions, budget & risk</div>
-      <div class="feature-box">🎓 Private AI-powered Learning Environments</div>
-      <div class="feature-box">🌐 Host Global Web3 & AI Webinars</div>
+    <h2 class="neon-heading">Unifying AI Agents & Web3 Discovery</h2>
+    <p class="subtext">Building a future of personal automation and decentralized rewards — now aligned with <strong>Diamante</strong>.</p>
+    <div class="diamante-logo">
+      <img src="images/diamante.png" alt="Diamante Logo" />
     </div>
   </section>
 
-  <section id="platforms" class="section">
-    <h2 class="neon-title">Explore Our Platforms</h2>
-    <div class="platforms">
-      <div class="platform-card">
-        <img src="images/orbitalscan-preview.jpg" alt="OrbitalScan"/>
-        <h3>OrbitalScan</h3>
-        <p>Daily Signals for Memecoins, NFTs & Airdrops via Telegram MiniApp</p>
-        <a href="https://t.me/orbitalscan_bot" target="_blank" class="cta-button">Explore OrbitalScan</a>
-      </div>
-      <div class="platform-card">
-        <img src="images/orbitalmine-preview.jpg" alt="OrbitalMine"/>
-        <h3>OrbitalMine</h3>
-        <p>Gamified Token Mining with Reputation System powered by NFTs</p>
-        <a href="https://orbitalmine-web.vercel.app/" target="_blank" class="cta-button">Explore OrbitalMine</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="team" class="section">
-    <h2 class="neon-title">Who We Are</h2>
-    <p class="centered-text">
-      We are a multidisciplinary team with deep expertise in artificial intelligence, blockchain, machine learning, and digital product strategy. 
-      Since 2016, we’ve shaped and contributed to transformative products — now united under one goal: creating an ecosystem where intelligent agents and decentralized discovery power the future of personal growth and wealth.
-    </p>
-  </section>
-
-  <section id="waitlist" class="section">
-    <h2 class="neon-title">Partner With Us</h2>
-    <form class="email-form">
-      <input type="email" placeholder="Enter your email" required>
-      <button type="submit">Join Waitlist</button>
+  <!-- Join Waitlist -->
+  <section class="waitlist-highlight">
+    <h3 class="neon-title">Join the Waitlist</h3>
+    <p>Early supporters will receive exclusive access, rewards, and eligibility for airdrops once we launch via <strong>Diamante</strong>.</p>
+    <form class="waitlist-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit" class="neon-button">Join Now</button>
     </form>
   </section>
 
-  <footer>
-    <p>&copy; 2025 OrbitalVerse. All rights reserved.</p>
-  </footer>
+  <!-- Main Features -->
+  <section class="features">
+    <h3 class="neon-title">What We Do</h3>
+    <div class="feature-boxes">
+      <div class="feature">Create your own AI Agent with personal traits and goals.</div>
+      <div class="feature">Turn any device into a revenue-generating miner.</div>
+      <div class="feature">Build your personalized investment portfolio powered by AI.</div>
+      <div class="feature">Access tailored education in tech and AI for academic and professional use.</div>
+      <div class="feature">Attend global online webinars and events with industry leaders.</div>
+    </div>
+  </section>
 
-  <script>
-    function goHome() {
-      window.location.href = "/";
-    }
-  </script>
+  <!-- Partner Section -->
+  <footer>
+    <div class="partner-invite">
+      <h3 class="neon-title">Partner with Us</h3>
+      <p>Join our mission and shape the future together. We're actively seeking partners aligned with our vision.</p>
+      <a href="https://example.com/partner-form" target="_blank" class="partner-button">Become a Partner</a>
+    </div>
+  </footer>
 </body>
 </html>
