@@ -3,98 +3,162 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OrbitalVerse | Web3 Intelligence & Mining Network</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OrbitalVerse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000010;
+      font-family: 'Orbitron', sans-serif;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .neon-box {
+      display: inline-block;
+      padding: 14px 24px;
+      border: 2px solid #ff66cc;
+      border-radius: 12px;
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 0 0 10px #ff66cc;
+      margin-top: 20px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      border: 2px solid #fff;
+      display: inline-block;
+      border-radius: 10px;
+      text-shadow: 0 0 10px #fff;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .feature-box {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border: 1.5px solid #ffffffaa;
+      border-radius: 15px;
+      width: 300px;
+      color: #ffffffcc;
+      font-size: 0.95em;
+      box-shadow: 0 0 10px #ffffff33;
+    }
+    .platform-preview {
+      margin-top: 50px;
+    }
+    .platform-img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 14px;
+      box-shadow: 0 0 12px #ff99cc;
+      margin: 15px;
+    }
+    .btn-learn {
+      margin-top: 20px;
+      background-color: transparent;
+      border: 2px solid #ff66cc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-shadow: 0 0 8px #ff99cc;
+      cursor: pointer;
+    }
+    .btn-learn:hover {
+      background-color: #ff66cc33;
+    }
+    .waitlist {
+      margin-top: 60px;
+    }
+    .waitlist input[type="email"] {
+      padding: 12px;
+      width: 250px;
+      border: 1px solid #aaa;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    .waitlist button {
+      margin-left: 10px;
+      padding: 12px 20px;
+      background-color: transparent;
+      color: #fff;
+      border: 2px solid #cc99ff;
+      border-radius: 25px;
+      text-shadow: 0 0 8px #cc99ff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <a href="/">
-      <img src="images/logo.png" alt="OrbitalVerse Logo" class="logo" />
-    </a>
-    <nav class="navbar">
-      <a href="/">Home</a>
-      <a href="orbitalscan.html">OrbitalScan</a>
-      <a href="orbitalmine.html">OrbitalMine</a>
-      <a href="#waitlist">Partner with Us</a>
-    </nav>
+  <header>
+    <h1>OrbitalVerse</h1>
+    <div class="neon-box">Unifying AI Agents and Web3 Discovery into a single intelligent ecosystem for the future of personal automation and decentralized rewards.</div>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>OrbitalVerse</h1>
-      <p>Unifying AI Agents and Web3 Discovery into a single intelligent ecosystem for the future of personal automation and decentralized rewards.</p>
-      <img src="images/hero-main.jpg" alt="OrbitalVerse City" class="hero-img" />
+  <section>
+    <div class="section-title">What We Do</div>
+    <div class="features">
+      <div class="feature-box">Create AI Agents with personal traits to research, analyze, and assist in daily tasks.</div>
+      <div class="feature-box">Turn devices into smart miners for generating passive income through real usage.</div>
+      <div class="feature-box">Build custom investment portfolios based on emotions, preferences, and goals.</div>
+      <div class="feature-box">Design personalized local education hubs in tech and AI for students and self-learners.</div>
+      <div class="feature-box">Host global Web3 webinars & research events to push the boundaries of innovation.</div>
     </div>
   </section>
 
-  <section class="features">
-    <h2>What We Do</h2>
-    <img src="images/orbitalverse-eco.jpg" alt="OrbitalVerse Ecosystem" class="section-img" />
-    <div class="features-grid">
-      <div class="feature-box">
-        <h3>Personal AI Agents</h3>
-        <p>Each user builds their own emotionally-aware AI assistant for daily research, analysis, and task execution across the web.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Device-Based Mining</h3>
-        <p>Every machine becomes a miner. Earn rewards while contributing compute power and validating reputation on-chain.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Smart Portfolio Curation</h3>
-        <p>Create investment baskets based on your unique preferences, budget, and emotional risk profile — powered by intelligent agents.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Local AI Learning Spaces</h3>
-        <p>Personalized learning modules in tech and AI fields, built for students, researchers, and professionals — all on your device.</p>
-      </div>
-      <div class="feature-box">
-        <h3>International Web3 Webinars</h3>
-        <p>Connect with the global community through live events, panel talks, and future-focused workshops.</p>
-      </div>
+  <section>
+    <div class="section-title">Explore Our Platforms</div>
+    <div class="platform-preview">
+      <img src="orbitalscan-preview.jpg" class="platform-img" alt="OrbitalScan"/>
+      <br/>
+      <button class="btn-learn" onclick="window.open('https://t.me/orbitalscan_bot','_blank')">Learn More</button>
+    </div>
+    <div class="platform-preview">
+      <img src="orbitalmine-preview.jpg" class="platform-img" alt="OrbitalMine"/>
+      <br/>
+      <button class="btn-learn" onclick="window.open('https://orbitalmine-web.vercel.app','_blank')">Learn More</button>
     </div>
   </section>
 
-  <section class="projects">
-    <h2>Explore Our Platforms</h2>
-    <div class="features-grid">
-      <div class="feature-box">
-        <img src="images/orbitalscan-preview.jpg" alt="OrbitalScan Preview" />
-        <h3>OrbitalScan</h3>
-        <p>Track the newest tokens, NFT drops, airdrops, and memecoins before they trend. Discover alpha signals in real time.</p>
-        <a href="orbitalscan.html" class="cta-button">Learn More</a>
-      </div>
-      <div class="feature-box">
-        <img src="images/orbitalmine-preview.jpg" alt="OrbitalMine Preview" />
-        <h3>OrbitalMine</h3>
-        <p>Gamified mining meets AI logic. Upgrade NFT miners, build your reputation, and earn native tokens every day.</p>
-        <a href="orbitalmine.html" class="cta-button">Learn More</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="about">
-    <h2>Who We Are</h2>
-    <img src="images/orbital-console.jpg" alt="Orbital Console" class="section-img" />
-    <p>
-      We are a 5-person core team with expertise across AI, project design, machine learning, blockchain development, and product strategy.  
-      Since 2016, we’ve led and contributed to dozens of initiatives in Web3 and intelligent automation — united now under one bold mission:  
-      Building a truly personal, automated, and decentralized digital life. OrbitalVerse is more than a product — it’s a long-term vision.
+  <section>
+    <div class="section-title">Who We Are</div>
+    <p style="max-width: 700px; margin: 0 auto; font-size: 1em; color: #ccc; text-shadow: 0 0 6px #ffffff11; line-height: 1.7;">
+      We are a visionary collective of technologists, AI architects, designers, and project builders — shaping the future since 2016.
+      From intelligent automation to decentralized ecosystems, our mission is to build a fully personalized, autonomous, and rewarding digital world.
+      OrbitalVerse is not just a brand — it's a movement.
     </p>
   </section>
 
-  <section class="waitlist" id="waitlist">
-    <h2>Partner with Us</h2>
-    <p>Join our journey and get notified as we grow the OrbitalVerse.</p>
-    <form class="waitlist-form">
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit">Join Waitlist</button>
+  <section class="waitlist">
+    <div class="section-title">Partner With Us</div>
+    <form>
+      <input type="email" placeholder="Enter your email to join waitlist" required />
+      <button type="submit">Join</button>
     </form>
   </section>
-
-  <footer class="footer">
-    <p>© 2025 OrbitalVerse — All Rights Reserved.</p>
-  </footer>
 </body>
 </html>
