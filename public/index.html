@@ -4,56 +4,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OrbitalScan | OrbitalVerse</title>
+  <title>OrbitalVerse | OrbitalScan + OrbitalMine</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- HEADER -->
   <header>
     <div class="logo">
-      <img src="images/logo.png" alt="OrbitalScan Logo" />
-      <h1>OrbitalVerse</h1>
+      <img src="images/logo.png" alt="OrbitalVerse Logo" onclick="window.location.href='/'" />
     </div>
+    <nav>
+      <a href="#whatwedo">What We Do</a>
+      <a href="#platforms">Platforms</a>
+      <a href="#team">Who We Are</a>
+      <a href="#waitlist">Join Us</a>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- HERO -->
   <section class="hero">
-    <h2 class="neon-heading">Unifying AI Agents & Web3 Discovery</h2>
-    <p class="subtext">Building a future of personal automation and decentralized rewards — now aligned with <strong>Diamante</strong>.</p>
-    <div class="diamante-logo">
-      <img src="images/diamante.png" alt="Diamante Logo" />
+    <h1 class="neon-title">Unifying AI Agents & Web3 Discovery</h1>
+    <p class="subtitle">A futuristic ecosystem of personal automation, AI agents, and decentralized rewards — now aligned with <strong>Diamante</strong>.</p>
+    <div class="hero-images">
+      <img src="images/logo.png" alt="OrbitalVerse" class="hero-logo"/>
+      <img src="images/diamante.png" alt="Diamante" class="diamante-logo"/>
     </div>
   </section>
 
-  <!-- Join Waitlist -->
-  <section class="waitlist-highlight">
-    <h3 class="neon-title">Join the Waitlist</h3>
-    <p>Early supporters will receive exclusive access, rewards, and eligibility for airdrops once we launch via <strong>Diamante</strong>.</p>
-    <form class="waitlist-form">
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit" class="neon-button">Join Now</button>
+  <!-- JOIN WAITLIST (CENTER SECTION) -->
+  <section class="waitlist-cta">
+    <h2 class="neon-title">Join the Waitlist</h2>
+    <p>Be among the first to access the OrbitalVerse ecosystem when we launch on Diamante. Get early access, rewards & airdrop eligibility.</p>
+    <form class="email-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Join Now</button>
     </form>
   </section>
 
-  <!-- Main Features -->
-  <section class="features">
-    <h3 class="neon-title">What We Do</h3>
-    <div class="feature-boxes">
-      <div class="feature">Create your own AI Agent with personal traits and goals.</div>
-      <div class="feature">Turn any device into a revenue-generating miner.</div>
-      <div class="feature">Build your personalized investment portfolio powered by AI.</div>
-      <div class="feature">Access tailored education in tech and AI for academic and professional use.</div>
-      <div class="feature">Attend global online webinars and events with industry leaders.</div>
+  <!-- WHAT WE DO -->
+  <section id="whatwedo" class="section">
+    <h2 class="neon-title">What We Do</h2>
+    <div class="features">
+      <div class="feature-box">🧠 Build Personal AI Agents tailored to your goals & emotions</div>
+      <div class="feature-box">💻 Turn devices into passive income smart miners</div>
+      <div class="feature-box">📊 Auto-curated AI Portfolios for crypto investing</div>
+      <div class="feature-box">🎓 Personalized Local AI Tutors for Web3 & AI education</div>
+      <div class="feature-box">🌐 Global Online Webinars with Web3 + AI Leaders</div>
     </div>
   </section>
 
-  <!-- Partner Section -->
-  <footer>
-    <div class="partner-invite">
-      <h3 class="neon-title">Partner with Us</h3>
-      <p>Join our mission and shape the future together. We're actively seeking partners aligned with our vision.</p>
-      <a href="https://example.com/partner-form" target="_blank" class="partner-button">Become a Partner</a>
+  <!-- EXPLORE OUR PLATFORMS -->
+  <section id="platforms" class="section">
+    <h2 class="neon-title">Explore Our Platforms</h2>
+    <div class="platforms">
+      <div class="platform-card">
+        <img src="images/orbitalscan-preview.jpg" alt="OrbitalScan" />
+        <h3>OrbitalScan</h3>
+        <p>Telegram MiniApp delivering daily alpha: memecoins, NFTs, and airdrops — all curated, trusted, and risk-assessed.</p>
+        <a href="https://t.me/orbitalscan_bot" target="_blank" class="cta-button">Explore OrbitalScan</a>
+      </div>
+      <div class="platform-card">
+        <img src="images/orbitalmine-preview.jpg" alt="OrbitalMine" />
+        <h3>OrbitalMine</h3>
+        <p>Gamified AI-powered mining with NFTs, reputation, and tokenized upgrades. Turn activity into automated rewards.</p>
+        <a href="https://orbitalmine-web.vercel.app/" target="_blank" class="cta-button">Explore OrbitalMine</a>
+      </div>
     </div>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section id="team" class="section">
+    <h2 class="neon-title">Who We Are</h2>
+    <p class="centered-text">
+      We are an experienced team of tech explorers with backgrounds in AI, machine learning, blockchain, design, and project strategy. Since 2016, we've initiated and contributed to dozens of innovations across Web3 and intelligent automation. OrbitalVerse is not just a platform — it's a long-term vision for future-native technology.
+    </p>
+  </section>
+
+  <!-- PARTNER WITH US -->
+  <section id="waitlist" class="section">
+    <h2 class="neon-title">Partner with Us</h2>
+    <p class="centered-text">
+      Join our mission and shape the future together. We're actively seeking partners aligned with our vision.
+    </p>
+    <div class="email-form">
+      <a href="https://example.com/partner-form" target="_blank" class="cta-button">Become a Partner</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 OrbitalVerse. Built with ❤️ on Diamante</p>
   </footer>
 </body>
 </html>
