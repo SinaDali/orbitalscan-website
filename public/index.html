@@ -3,92 +3,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OrbitalVerse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OrbitalVerse | Official Website</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="logo.png" />
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header>
-    <div class="logo" onclick="location.href='index.html'">
-      <img src="logo.png" alt="Logo" />
-      <span>OrbitalVerse</span>
-    </div>
+  <header class="neon-header">
+    <img src="logo.png" alt="OrbitalVerse Logo" class="logo" onclick="location.href='index.html'">
     <nav>
       <a href="#whatwedo">What We Do</a>
       <a href="#platforms">Platforms</a>
-      <a href="#team">Who We Are</a>
-      <a href="#contact">Partner</a>
+      <a href="#who">About</a>
+      <a href="#waitlist">Partner</a>
     </nav>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
-    <img src="hero-main.jpg" class="hero-img" alt="OrbitalVerse Hero" />
-    <div class="hero-text neon-glow-box">
-      <h1>Unifying AI Agents and Web3 Discovery</h1>
-      <p class="subtitle">Into a single intelligent ecosystem for the future of personal automation and decentralized rewards.</p>
+    <h1>OrbitalVerse</h1>
+    <div class="subtitle neon-box">
+      Unifying AI Agents and Web3 Discovery into a single intelligent ecosystem for the future of personal automation and decentralized rewards.
+    </div>
+    <img src="hero-main.jpg" alt="Hero" class="hero-img"/>
+  </section>
+
+  <section id="whatwedo" class="section">
+    <h2 class="neon-title">What We Do</h2>
+    <div class="cards">
+      <div class="card neon-box">Create intelligent AI Agents tailored to your personality and needs</div>
+      <div class="card neon-box">Use any device as a personal mining unit to earn passively</div>
+      <div class="card neon-box">Auto-build unique investment portfolios based on your emotions and budget</div>
+      <div class="card neon-box">Launch local educational systems powered by AI & ML</div>
+      <div class="card neon-box">Host international Web3 and tech webinars</div>
     </div>
   </section>
 
-  <!-- WHAT WE DO -->
-  <section id="whatwedo">
-    <div class="section-title neon-frame">What We Do</div>
-    <div class="feature-boxes">
-      <div class="feature neon-border">
-        <img src="orbitalverse-eco.jpg" alt="Ecosystem" />
-        <p>Create deeply personal AI Agents to explore, analyze, and automate across the Web3 world.</p>
-      </div>
-      <div class="feature neon-border">
-        <img src="orbital-console.jpg" alt="AI Console" />
-        <p>Turn any device into a mining node for rewards and data intelligence.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPLORE PLATFORMS -->
-  <section id="platforms">
-    <div class="section-title neon-frame">Explore Our Platforms</div>
+  <section id="platforms" class="section">
+    <h2 class="neon-title">Explore Our Platforms</h2>
     <div class="platforms">
-      <div class="platform-card">
-        <img src="orbitalmine-preview.jpg" alt="OrbitalMine" />
-        <h3>OrbitalMine</h3>
-        <p>Gamified NFT-based mining platform with real rewards.</p>
-        <a href="https://orbitalmine-web.vercel.app/" class="btn-glow" target="_blank">Learn More</a>
+      <div class="platform-card neon-box">
+        <img src="orbitalscan-preview.jpg" alt="OrbitalScan Preview"/>
+        <p>OrbitalScan - Daily Signals, Airdrops & Insights</p>
+        <a href="https://t.me/orbitalscan_bot" target="_blank" class="neon-btn">Learn More</a>
       </div>
-      <div class="platform-card">
-        <img src="orbitalscan-preview.jpg" alt="OrbitalScan" />
-        <h3>OrbitalScan</h3>
-        <p>Discover early airdrops, memecoins, and NFT alphas.</p>
-        <a href="https://t.me/orbitalscan_bot" class="btn-glow" target="_blank">Learn More</a>
+      <div class="platform-card neon-box">
+        <img src="orbitalmine-preview.jpg" alt="OrbitalMine Preview"/>
+        <p>OrbitalMine - Mine while you live</p>
+        <a href="https://orbitalmine-web.vercel.app/" target="_blank" class="neon-btn">Learn More</a>
       </div>
     </div>
   </section>
 
-  <!-- WHO WE ARE -->
-  <section id="team">
-    <div class="section-title neon-frame">Who We Are</div>
-    <div class="who-we-are">
-      <p class="highlighted">
-        Our team of visionary creators, engineers, and strategists have been active in AI, machine learning, blockchain, and product design since 2016. OrbitalVerse is the culmination of years of exploration — a bold mission to build a personal, decentralized, intelligent ecosystem for every digital explorer.
-      </p>
+  <section id="who" class="section">
+    <h2 class="neon-title">Who We Are</h2>
+    <div class="neon-box about-text">
+      We are a dedicated Web3 and AI innovation team with experience across blockchain, machine learning, product development, and strategic design. Since 2016, our collective vision has driven unique projects that fuse automation with decentralized utility — shaping a smarter digital future under the OrbitalVerse mission.
     </div>
   </section>
 
-  <!-- CONTACT / WAITLIST -->
-  <section id="contact">
-    <div class="section-title neon-frame">Partner with Us</div>
-    <form class="waitlist-form">
-      <input type="email" placeholder="Enter your email to join the waitlist" required />
-      <button type="submit" class="btn-glow">Join Now</button>
-    </form>
+  <section id="waitlist" class="section">
+    <h2 class="neon-title">Partner With Us</h2>
+    <div class="waitlist-box neon-box">
+      <input type="email" placeholder="Enter your email" />
+      <button class="neon-btn">Join Waitlist</button>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 OrbitalVerse. Powered by Diamante Network.</p>
+    <a href="#hero"><img src="logo.png" class="footer-logo" alt="Back to top"></a>
   </footer>
-
 </body>
 </html>
