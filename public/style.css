@@ -1,183 +1,111 @@
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Orbitron', sans-serif;
-  background-color: #010101;
-  color: #fff;
-}
-
+/* Header with glassmorphism effect */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   padding: 20px 40px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #444;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
+/* Logo with glow */
 .logo {
-  height: 40px;
+  height: 60px;
   cursor: pointer;
+  filter: drop-shadow(0 0 6px #66f);
+  transition: transform 0.2s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
 }
 
-nav a {
-  color: #66ccff;
-  margin-left: 30px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.hero {
-  text-align: center;
-  padding: 80px 20px 40px;
-}
-
-.hero h1 {
-  font-size: 2.5em;
-  text-shadow: 0 0 15px #00ffff;
-}
-
+/* Hero subtitle in neon box */
 .subtitle-box {
   margin: 20px auto;
   max-width: 700px;
-  padding: 10px 20px;
-  border: 2px solid #66ffff;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.05);
-  text-shadow: 0 0 5px #00ffff;
-}
-
-.hero-image {
-  width: 100%;
-  max-width: 800px;
-  margin-top: 30px;
+  padding: 12px 25px;
+  border: 2px solid #00ffff;
   border-radius: 12px;
-  box-shadow: 0 0 20px #00ffff88;
+  background: rgba(0, 255, 255, 0.08);
+  text-shadow: 0 0 10px #00ffff;
+  font-weight: 500;
 }
 
-.section-title.neon {
-  text-align: center;
-  font-size: 1.8em;
-  padding: 12px 30px;
-  margin: 60px auto 30px;
-  border: 2px solid #fff;
-  display: inline-block;
-  border-radius: 10px;
-  text-shadow: 0 0 15px #fff;
-}
-
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 0 20px 60px;
-}
-
-.feature-box {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid #ffffff88;
-  border-radius: 14px;
+/* Gradient & glow for feature and platform boxes */
+.feature-box,
+.platform-box {
+  background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+  border: 1.5px solid #ffffff22;
+  border-radius: 16px;
   padding: 20px;
   width: 280px;
   text-align: center;
-  box-shadow: 0 0 10px #ffffff11;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+.feature-box:hover,
+.platform-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px #00ffffaa;
 }
 
-.platforms {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 0 20px 60px;
-}
-
-.platform-box {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid #ffffff88;
-  border-radius: 14px;
-  padding: 20px;
-  width: 300px;
-  text-align: center;
-  box-shadow: 0 0 10px #ffffff11;
-}
-
+/* Rounded images with soft glow */
 .platform-box img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 14px;
+  box-shadow: 0 0 12px #222;
   margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.platform-box img:hover {
+  transform: scale(1.05);
 }
 
-.neon-button {
+/* Neon title bar look */
+.section-title.neon {
+  text-align: center;
+  font-size: 2em;
+  padding: 10px 30px;
+  margin: 60px auto 30px;
+  border: 2px solid #fff;
   display: inline-block;
-  padding: 10px 20px;
-  border: 2px solid #ff66cc;
-  border-radius: 25px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 15px;
-  text-shadow: 0 0 8px #ff99cc;
-  background-color: transparent;
+  border-radius: 12px;
+  text-shadow: 0 0 18px #ffffff;
+  background: rgba(255, 255, 255, 0.03);
 }
 
-.neon-button:hover {
-  background-color: #ff66cc33;
-}
-
-.who-text {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: rgba(255,255,255,0.03);
-  border: 1px solid #888;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 0 10px #444;
-}
-
-.email-form {
-  text-align: center;
-  margin: 40px auto 60px;
-}
-
+/* Email input and button glow */
 .email-form input {
-  padding: 10px;
+  padding: 12px;
   font-size: 1em;
-  width: 240px;
-  border-radius: 5px;
-  border: 1px solid #888;
+  width: 250px;
+  border-radius: 8px;
+  border: none;
   margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
 }
-
 .email-form button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   background: transparent;
   border: 2px solid #cc99ff;
   border-radius: 25px;
   color: #fff;
   font-weight: bold;
   text-shadow: 0 0 8px #cc99ff;
+  background-color: rgba(204, 153, 255, 0.1);
+  transition: background 0.3s ease;
+}
+.email-form button:hover {
+  background-color: rgba(204, 153, 255, 0.3);
 }
 
-footer {
-  text-align: center;
-  padding: 30px 10px;
-  font-size: 0.9em;
-  color: #888;
-  background-color: #000;
-  border-top: 1px solid #333;
-}
-
-.footer-logo {
-  width: 40px;
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-.footer-links a {
-  margin: 0 10px;
-  color: #66ccff;
-  text-decoration: none;
+/* Font for titles */
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
 }
